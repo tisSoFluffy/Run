@@ -1,7 +1,7 @@
-var carLike = function(obj, loc){
-    obj.loc = loc;
-    obj.move = function(){
-        obj.loc++;
-    }
+var Car = function(loc){
+    this.loc = loc;
     return obj;
-}
+};
+Car.prototype.move = function(){
+        this.loc++;
+    }
